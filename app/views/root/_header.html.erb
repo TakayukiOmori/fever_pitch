@@ -1,20 +1,21 @@
-    <header id="header" class="header-large clearfix">
-	    <div class="header_title">
-	        <h1>Fever Pitch</h1>
-	    </div>
+    <header class="header-large clearfix">
 
 	    <div class="header__inner">
-	        <nav class="header__function">
-	            <ul class="header_menu">
-	            	<li class="header_item"><%= link_to "Home", "#" %></li>
-	            	<li class="header_item"><%= link_to "企業情報", "#" %></li>
-	            	<li class="header_item"><%= link_to "お問い合わせ", "#" %></li>
-	        	</ul>
-	        </nav>
+		    <div class="header_title">
+		        <h1 class="logo"><%= link_to "Fever Pitch", root_path %></h1>
+		    </div>
+        <div class="header_box">
+          <nav>
+            <ul>
+            <li class="header_item"><%= link_to "Home", root_path %></li>
+              <li class="header_item"><%= link_to "Service", service_path %></li>
+              <li class="header_item"><%= link_to "Fever Us", fever_us_path %></li>
+              <li class="header_item"><%= link_to "Company", company_info_path %></li>
+              <li class="header_item"><%= link_to "Contact", contact_path %></li>
+            </ul>
+          </nav>
+        </div>
 	    </div>
 
     </header>
 
-    <main class="main_top">
-    	
-    </main>

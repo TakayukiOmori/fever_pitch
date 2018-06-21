@@ -23,3 +23,261 @@
   display: block;
   clear: both;
 }
+
+body{
+  background-color: #f9f9f7;
+}
+/*header*/
+
+header{
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	background-color: hsla(0,0%,100%,.95);
+  box-shadow: 0px 5px 3px -3px rgba(141,147,150,0.1);
+  z-index: 2;
+}
+
+.main_top{
+	width: 100%;
+	height: 600px;
+	/*background-image: url('beach-bench.jpg');*/
+	background-position: center;
+	background-size: cover;
+}
+
+.header_title{
+  float: left;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.header__inner{
+	 width: 75%;
+	 height: 60px;
+   margin: auto;
+}
+
+
+.logo{
+  float: left;
+  line-height: 2;
+  font-size: 0.9rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 70px;
+}
+.header_box{
+  width: 800px;
+  height: 60px;
+  float: right;
+}
+.header_item{
+  align-items: center;
+	padding: 0px 20px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  float: left;
+  list-style: none;
+  display: list-item;
+  font-weight: normal;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  height: 70px;
+	}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+
+/*#main {
+  position: relative;
+  list-style: none;
+  font-weight: 400;
+  font-size: 0;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0;
+  margin-left: 100px;
+}
+#main li {
+  font-size: 0.8rem;
+  display: inline-block;
+  position: relative;
+  padding: 15px 0;
+  cursor: pointer;
+  z-index: 5;
+  margin: 30px;
+  min-width: 120px;
+}
+
+li {
+  margin: 0;
+}
+
+.drop {
+  overflow: hidden;
+  list-style: none;
+  position: absolute;
+  padding: 0;
+  width: 100%;
+  left: 0;
+  top: 48px;
+}
+.drop .drop_in {
+  width: 100%;
+  -webkit-transform: translate(0, -100%);
+  -moz-transform: translate(0, -100%);
+  -ms-transform: translate(0, -100%);
+  transform: translate(0, -100%);
+  -webkit-transition: all 0.5s 0.1s;
+  -moz-transition: all 0.5s 0.1s;
+  -ms-transition: all 0.5s 0.1s;
+  transition: all 0.5s 0.1s;
+  position: relative;
+}
+
+.inner{
+	width: 1024px;
+	margin: auto;
+	/*overflow: hidden;*/
+}
+/*.drop li {
+  display: block;
+  padding: 0;
+  width: 100%;
+  background:  rgba(255,255,255,.8) !important;
+}
+
+
+#main li:nth-child(1):hover ul .drop_in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(1):hover ~ #marker {
+  -webkit-transform: translate(0px, 0);
+  -moz-transform: translate(0px, 0);
+  -ms-transform: translate(0px, 0);
+  transform: translate(0px, 0);
+}
+
+#main li:nth-child(2):hover ul .drop_in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(2):hover ~ #marker {
+  -webkit-transform: translate(120px, 0);
+  -moz-transform: translate(120px, 0);
+  -ms-transform: translate(120px, 0);
+  transform: translate(120px, 0);
+}
+
+#main li:nth-child(3):hover ul .drop_in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(3):hover ~ #marker {
+  -webkit-transform: translate(240px, 0);
+  -moz-transform: translate(240px, 0);
+  -ms-transform: translate(240px, 0);
+  transform: translate(240px, 0);
+}
+
+#main li:nth-child(4):hover ul .drop_in {
+  -webkit-transform: translate(0, 0);
+  -moz-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+#main li:nth-child(4):hover ~ #marker {
+  -webkit-transform: translate(360px, 0);
+  -moz-transform: translate(360px, 0);
+  -ms-transform: translate(360px, 0);
+  transform: translate(360px, 0);
+}*/
+
+
+.top-main{
+  width: 100%;
+  height: 600px;
+  padding-top: 90px;
+  /*background-image: url('beach.jpg');*/
+  background-position: center;
+  background-size: cover;
+  /*margin-top: 10px;*/
+}
+
+.img{
+  width: 90%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
+
+.viewer {
+    margin: 0 auto;
+    float: right;
+    margin-right: 111px;
+    width: 55%;
+    height: 400px;
+    text-align: left;
+    overflow: hidden;
+    margin-top: 160px;
+}
+ 
+.viewer ul {
+    width: 100%;
+    height: 600px;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+ 
+.viewer ul li {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    display: none;
+    position: absolute;
+}
+
+.img_text{
+  opacity: 5;
+  font-family: "游明朝体",
+         "Yu Mincho",
+         YuMincho,
+         "HGS明朝E",
+         "ヒラギノ明朝 Pro W6",
+         "Hiragino Mincho Pro",
+         "ＭＳ Ｐ明朝",
+         serif;
+  line-height: 2;
+  font-size: 1.6rem;
+  letter-spacing: 5px;
+  position: absolute;
+  top: 290px;
+  left: 140px;
+  z-index: 100;
+}

@@ -1,0 +1,39 @@
+<%= render 'root/header' %>
+		<main class="top-main">
+			<div class="viewer">
+				<ul>
+				<li><%= image_tag ('concert.jpg'), class: "img" %></li>
+				<li><%= image_tag ('aranxa.jpg'), class: "img" %></li>
+				<li><%= image_tag ('applause.jpg'), class: "img" %></li>
+				<li><%= image_tag ('bokeh.jpg'), class: "img" %></li>
+				</ul>
+			</div><!--/.viewer-->
+				<div class="img_text">
+					<p>熱狂的な瞬間を</p>
+					<p style="text-align: right;">共に体験しよう</p>
+				</div>
+		</main>
+
+
+    		<script>
+					$(function(){
+				    var $setElm = $('.viewer'),
+				    fadeSpeed = 1500,
+				    switchDelay = 5000;
+
+				    $setElm.each(function(){
+				        var targetObj = $(this);
+				        var findUl = targetObj.find('ul');
+				        var findLi = targetObj.find('li');
+				        var findLiFirst = targetObj.find('li:first');
+
+				        findLi.css({display:'block',opacity:'0',zIndex:'99'});
+				        findLiFirst.css({zIndex:'100'}).stop().animate({opacity:'1'},fadeSpeed);
+
+				        setInterval(function(){
+				            findUl.find('li:first-child').animate({opacity:'0'},fadeSpeed).next('li').css({zIndex:'100'}).animate({opacity:'1'},fadeSpeed).end().appendTo(findUl).css({zIndex:'99'});
+				        },switchDelay);
+				    });
+				});
+
+			</script>
